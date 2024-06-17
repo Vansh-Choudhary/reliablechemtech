@@ -97,11 +97,18 @@ const filteredProducts = ProductData.filter(product =>
     <div className='Navbar'>
         <img src='logo.png' style={{width:'3rem'}}/>
         <div className='NavbarLink'>
+          <Link href={'#home'}>
           <h2>Home</h2>
+          </Link>
+          <Link href={'#about'}>
           <h2>About Us</h2>
+          </Link>
+          <Link href={'#products'}>
           <h2>Products</h2>
+          </Link>
+          <Link href={'#contact'}>
           <h2>Contact</h2>
-
+          </Link>
         </div>
         <Link href={'#contact'}>
         <button className='rounded-3xl font-times  text-white text-2xl p-2 px-5 my-5 bg-black'>
@@ -111,7 +118,7 @@ const filteredProducts = ProductData.filter(product =>
     </div>
     <ToastContainer />
     <div className="h-fit min-w-fit w-full pt-[6rem]" style={{ backgroundImage: "linear-gradient(45deg, #E7D2F6, white, #E1F3FB)" }}>
-      <div className='lg:flex w-full sm:block  px-10 justify-around py-10 gap-y-10'>
+      <div name="home" className='lg:flex w-full sm:block  px-10 justify-around py-10 gap-y-10'>
         <h1 className="font-sans font-normal text-black text-6xl gradientHeading lg:w-[50vw]">Innovation and <span className='font-times font-bold italic'>Quality</span> in <span className='font-times font-bold italic'>Chemical</span> Solutions for all your needs</h1>
         <div className='min-w-[20rem]'>
           <h1 className="font-times italic font-bold text-black text-3xl w-[20rem] gradientHeading">Intrested in buying the Product?</h1>
@@ -158,7 +165,7 @@ const filteredProducts = ProductData.filter(product =>
         </div>
       </div>
 
-      <div className='bg-black min-h-fit mt-[3rem] pb-0 flex justify-start flex-col items-center px-[2rem]'>
+      <div name='about' className='bg-black min-h-fit mt-[3rem] pb-0 flex justify-start flex-col items-center px-[2rem]'>
         <img src='circleExplore.png'className='sticky -translate-y-[4rem] min-w-[6rem] min-h-[6rem] max-h-[6rem] max-w-[6rem]'/>
           <h2 className='font-sans text-gray-700 text-5xl'>Welcome to best service</h2>
           <h2 className='font-sans text-gray-100 text-7xl'>Reliable Chemtech</h2>
@@ -197,7 +204,7 @@ const filteredProducts = ProductData.filter(product =>
 
       </div>
 
-      <div className='bg-white rounded-[4rem] w-[100%] p-[2.5%] my-[5%] rounded-b-none' style={{boxShadow: '0 0 5rem rgb(153 153 153 / 50%)'}}>
+      <div name='products' className='bg-white rounded-[4rem] w-[100%] p-[2.5%] my-[5%] rounded-b-none' style={{boxShadow: '0 0 5rem rgb(153 153 153 / 50%)'}}>
         <div className='flex justify-between items-center flex-wrap '>
           <h2 className='font-sans gradientHeading text-3xl flex gap-5 my-7'> <span><LuGalleryVertical className='hidden lg:block' size={30}/> </span> Our Top Quality Products</h2>
           <div className='flex p-2 g-x-2 bg-slate-100 w-fit rounded-lg items-center h-[2.5rem]  '>
