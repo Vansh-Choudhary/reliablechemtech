@@ -10,7 +10,10 @@
 html{
   scroll-behavior: smooth;
 }
-
+@font-face {
+  font-family: Merit ;
+  src: url("merit.ttf");
+}
 
 .gradientHeading{
   font-weight: 100;
