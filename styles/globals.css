@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+.gradientHeading{
+  font-weight: 100;
+  background: -webkit-linear-gradient(black, #595959);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradientHeadingWhite{
+  font-weight: 100;
+  background: -webkit-linear-gradient(rgb(255, 255, 255), #a8a8a8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar{
+  background: red;
+  height: 0.2rem;
+  width: 0.2rem;
+  background-color: transparent;
+}
+
+
+body{
+  cursor: url(cursor/normal.svg), auto;
+}
+
+button{
+  cursor: url(cursor/pointer.svg), auto;
+  transition: 0.4s;
+}
+
+
+button:hover{
+  scale: 0.9;
+  box-shadow: 5px 5px 0rem rgba(46, 46, 46, 0.932);
+
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  cursor: url(cursor/text.svg), auto;
+}
+
+.Navbar{
+  height: 4rem;
+  width: 95%;
+  margin: 1vh 2.5vw;
+  border-radius: 4rem;
+  backdrop-filter: blur(0.4rem);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 1vh;
+  z-index: 2;
+  border:1px solid rgba(0, 0, 0, 0.095);
+  padding: 0 2.5vw;
+  box-shadow: 0 0 3rem  rgb(153 153 153 / 50%);
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.738);
+}
+
+.NavbarLink{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.NavbarLink h2{
+  font-size: 1.3rem;
+  /* font-family: times; */
+  /* font-weight: bold; */
+  opacity: 0.4;
+  cursor: url(cursor/pointer.svg), auto;
+  transition: 0.2s;
+}
+.NavbarLink h2:hover{
+  transform: scale(1.02);
+  opacity: 1;
+}
+.productItem{
+  border-bottom: 2px solid gray;
+  font-size: 1.4rem;
+  padding: 0.3rem;
+  white-space: pre;
+  color: gray;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: url(cursor/pointer.svg), auto;
+  transition: 0.4s;
+}
+.productItem:hover{
+  /* border-radius: 0.4rem; */
+  padding-bottom: 0;
+  background-color: #5959590f;
+}
+
+.productItemSelected{
+  border-bottom: 3px solid black ;
+  color: black;
+  /* font-weight: bold; */
+  font-family: merit;
+}
+.arrowButton{
+  opacity: 0.3;
+  transition: 0.3s;
+}
+.arrowButton:hover{
+  opacity: 1;
+  scale: 1.1;
+  cursor: url(cursor/pointer.svg), auto;
+
+}
+
+.productCard{
+  width: 19rem;
+  margin-top: auto;
+  padding: 1rem 2rem;
+  /* box-shadow: 0 0 2rem #e4e4e4; */
+  border-radius: 0rem;
+  border-bottom: 4px solid;
+}
+@media screen and (max-width: 808px) {
+  .NavbarLink{
+    display: none;
+  }
+  
+}
