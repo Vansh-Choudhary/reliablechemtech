@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 import { ToastContainer, toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
 import 'react-toastify/dist/ReactToastify.css';
+import Head from 'next/head';
 
 dotenv.config(); 
 emailjs.init({publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY});
@@ -89,6 +90,10 @@ const filteredProducts = ProductData.filter(product =>
 
   return (
     <>
+    <Head>
+      <title>Reliable Chemtech</title>
+      <link rel="icon" href="logo.png" />
+    </Head>
     <div className='Navbar'>
         <img src='logo.png' style={{width:'3rem'}}/>
         <div className='NavbarLink'>
