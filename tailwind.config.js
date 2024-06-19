@@ -15,7 +15,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Merit"],
-      times: ["Times new Roman"],
+      coolvetica: ["Coolvetica"],
       mono: ['consolas']
       
     },
