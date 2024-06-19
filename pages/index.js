@@ -120,7 +120,7 @@ const filteredProducts = ProductData.filter(product =>
     <ToastContainer />
     <div name='home' className="h-fit min-w-fit w-full pt-[5rem]" style={{ backgroundImage: "linear-gradient(45deg, #E7D2F6, white, #E1F3FB)" }}>
       <div  style={{background:'url(/bg1.jpeg)'}} className='overflow-hidden relative bg-black min-h-fit mt-[0rem] py-[11rem] flex justify-start flex-col items-center px-[2rem]'>
-          <div  style={{background: 'rgba(20,20,20,0.6'}} className='absolute top-0 left-0 w-[100vw] -z-1 h-full'/>
+          <div  style={{background: 'rgba(20,20,20,0.6'}} className='absolute top-0 left-0 w-full -z-1 h-full'/>
           <h2 className='font-sans text-gray-100 text-7xl text-center z-[2]'>WELCOME TO</h2>
           <h2 className='font-sans text-gray-100 text-7xl text-center z-[2]'>RELIABLE CHEMTECH</h2>
           <h2 className='font-coolvetica text-gray-100 text-3xl z-[2] text-center my-2'>Leading chemical suppliers for PVC, EVA & Rubber industries</h2>
@@ -226,7 +226,7 @@ const filteredProducts = ProductData.filter(product =>
 
 
   <div name='about' style={{background:'url(/about.webp)'}} className='overflow-hidden relative bg-black min-h-fit mt-[0rem] py-[11rem] flex justify-start flex-col items-center px-[2rem]'>
-      <div  style={{background: 'rgba(20,20,20,0.6'}} className='absolute top-0 left-0 w-[100vw] -z-1 h-full'/>
+      <div  style={{background: 'rgba(20,20,20,0.6'}} className='absolute top-0 left-0 w-full -z-1 h-full'/>
       <div className='z-[2]'>
         <h1 className="text-5xl w-full text-center mt-[5rem] text-white">About Us</h1>
         <div className="h-[0.5rem] w-[12rem] mx-auto my-2 rounded-full bg-blue-400"></div>
@@ -251,7 +251,7 @@ const filteredProducts = ProductData.filter(product =>
 <div>
   <h1 className="text-5xl w-full text-center mt-[5rem]">PRODUCTS</h1>
   <div className="h-[0.5rem] w-[12rem] mx-auto my-2 rounded-full bg-blue-400"></div>
-  <p className="font-coolvetica  text-2xl h-fit mt-[1rem]  text-gray-500 text-center leading-5 w-FULL">Click the Product Category to see all its products</p>
+  <p className="font-coolvetica  text-2xl h-fit mx-[5vw] mt-[1rem]  text-gray-500 text-center leading-5 w-[90vw]">Click the Product Category to see all its products</p>
 
 </div>
 
@@ -265,7 +265,7 @@ const filteredProducts = ProductData.filter(product =>
               />
             <LuSearch size={20} /> 
           </div> */}
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-center items-center'>
           <div ref={containerRef} className='w-[98vw] h-fit px-2 gap-5  flex justify-center items-center flex-wrap'>
           {categories.map((category, index) => (
             <Link href={'#selectedProduct'}>
@@ -333,15 +333,15 @@ const filteredProducts = ProductData.filter(product =>
 
 
 {/* CONTACT SECTION */}
-<div>
+{/* <div>
   <h1 className="text-5xl w-full text-center mt-[3rem]">Contact Us</h1>
   <div className="h-[0.5rem] w-[12rem] mx-auto my-2 rounded-full bg-blue-400"></div>
   {/* <p className="font-coolvetica  text-2xl h-fit mt-[1rem]  text-gray-500 text-center leading-5 w-FULL">Click the Product Category to see all its products</p> */}
 
-</div>
+{/* </div>  */}
 <div name="contactus" className='flex h-fit min-w-[98vw] gap-[1rem] px-[0vw] justify-between flex-wrap bg-black my-[4vw]'>
 
-  <div className='py-10 px-40 flex flex-1 flex-col  text-white'>
+  <div className='py-10 px-20 flex flex-1 flex-col  text-white'>
   <h1 className='font-sans text-5xl gradientHeadingWhite'>Contact Us</h1>
   <h1 className="font-coolvetica text-black text-3xl gradientHeadingWhite mb">Let's Connect</h1>
   <div className="mt-8">
