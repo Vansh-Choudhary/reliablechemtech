@@ -231,7 +231,7 @@ const filteredProducts = ProductData.filter(product =>
         <h1 className="text-5xl w-full text-center mt-[5rem] text-white">About Us</h1>
         <div className="h-[0.5rem] w-[12rem] mx-auto my-2 rounded-full bg-blue-400"></div>
       </div>
-      <h2 className='font-coolvetica text-gray-100 text-3xl z-[2] font-normal text-center my-2 w-[70vw]'>
+      <h2 className='font-coolvetica text-gray-100 text-3xl z-[2] font-normal text-center my-2 w-[90vw]'>
         Reliable Chemtech is a trading company based in India, importing a
         wide range of high-grade industrial chemicals. We deliver a wide gamut of applications
         across sectors.
@@ -251,7 +251,7 @@ const filteredProducts = ProductData.filter(product =>
 <div>
   <h1 className="text-5xl w-full text-center mt-[5rem]">PRODUCTS</h1>
   <div className="h-[0.5rem] w-[12rem] mx-auto my-2 rounded-full bg-blue-400"></div>
-  <p className="font-coolvetica  text-2xl h-fit mx-[5vw] mt-[1rem]  text-gray-500 text-center leading-5 w-[90vw]">Click the Product Category to see all its products</p>
+  <p className="font-coolvetica  text-2xl h-fit px-[5vw] mt-[1rem]  text-gray-500 text-center leading-5 w-full">Click the Product Category to see all its products</p>
 
 </div>
 
