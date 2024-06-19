@@ -107,7 +107,7 @@ const filteredProducts = ProductData.filter(product =>
           <Link href={'#products'}>
           <h2>Products</h2>
           </Link>
-          <Link href={'#contact'}>
+          <Link href={'#contactus'}>
           <h2>Contact</h2>
           </Link>
         </div>
@@ -330,6 +330,44 @@ const filteredProducts = ProductData.filter(product =>
   )}
 </div>;
 
+
+
+{/* CONTACT SECTION */}
+<div>
+  <h1 className="text-5xl w-full text-center mt-[3rem]">Contact Us</h1>
+  <div className="h-[0.5rem] w-[12rem] mx-auto my-2 rounded-full bg-blue-400"></div>
+  {/* <p className="font-coolvetica  text-2xl h-fit mt-[1rem]  text-gray-500 text-center leading-5 w-FULL">Click the Product Category to see all its products</p> */}
+
+</div>
+<div name="contactus" className='flex h-fit min-w-[98vw] gap-[1rem] px-[0vw] justify-between flex-wrap bg-black my-[4vw]'>
+
+  <div className='py-10 px-40 flex flex-1 flex-col  text-white'>
+  <h1 className='font-sans text-5xl gradientHeadingWhite'>Contact Us</h1>
+  <h1 className="font-coolvetica text-black text-3xl gradientHeadingWhite mb">Let's Connect</h1>
+  <div className="mt-8">
+    <p className="text-lg font-coolvetica">
+      <span className='text-2xl text-gray-500'>Phone</span><br/> +91 9999028806, +91 9873123800
+    </p>
+    <p className="text-lg font-coolvetica mt-[0.3rem]">
+      <span className='text-2xl text-gray-500'>Email</span><br/> info@reliablechemtech.com, sales@reliablechemtech.com
+    </p>
+    <p className="text-lg font-coolvetica mt-[0.3rem]">
+      <span className='text-2xl text-gray-500'>Address</span><br/> 875, Swarn Park, Mundka, New Delhi - 110041, near Metro Pillar No. 497.
+    </p>
+    <p className="text-lg font-coolvetica mt-[0.3rem]">
+      <span className='text-2xl text-gray-500'>Business Hours</span><br/> 9 AM to 7 PM, Monday to Saturday (Sunday: Closed)
+    </p>
+  </div>
+  <div className='flex gap-4 mt-[2rem] text-white'>
+    <LuLinkedin size={30}/>
+    <LuTwitter size={30}/>
+    <LuPhoneCall size={30}/>
+  </div>
+</div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56003.88603804155!2d76.96467876434323!3d28.68238041421378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05c4409e4423%3A0x4bd0e5139d400c25!2sSwarn%20Park!5e0!3m2!1sen!2sin!4v1718832443534!5m2!1sen!2sin" style={{ height: '34rem', flex:'1.5'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
 {/* INQUIRE SECTION */}
 <div>
   <h1 className="text-5xl w-full text-center mt-[3rem]">Inquire Us</h1>
@@ -376,48 +414,13 @@ const filteredProducts = ProductData.filter(product =>
         />
       <LuMail size={20} /> 
     </div>
-    <textarea value={inputMessage} onChange={(e)=>setinputMessage(e.target.value)} className='min-w-[21.5rem] font-coolvetica py-2 px-5  mt-5 placeholder-black text-xl' placeholder='Enter Message'>
+    <textarea value={inputMessage} onChange={(e)=>setinputMessage(e.target.value)} className='min-w-[21.5rem] font-coolvetica py-2 px-5  border-gray-400 border-2 mt-5 placeholder-black text-xl' placeholder='Enter Message'>
     </textarea>
-    <button className='rounded-3xl font-coolvetica  text-black text-2xl p-2 px-5 my-5 bg-white block' onClick={()=>submitForm()}>Submit Form</button>
+    <button className='rounded-3xl font-coolvetica  text-white text-2xl p-2 px-5 my-5 bg-black block' onClick={()=>submitForm()}>Submit Form</button>
 
   </div>
 </div>
 
-{/* CONTACT SECTION */}
-<div>
-  <h1 className="text-5xl w-full text-center mt-[3rem]">Contact Us</h1>
-  <div className="h-[0.5rem] w-[12rem] mx-auto my-2 rounded-full bg-blue-400"></div>
-  {/* <p className="font-coolvetica  text-2xl h-fit mt-[1rem]  text-gray-500 text-center leading-5 w-FULL">Click the Product Category to see all its products</p> */}
-
-</div>
-<div name="contact" className='flex h-fit min-w-[98vw] gap-[1rem] px-[0vw] justify-between flex-wrap bg-black my-[4vw]'>
-
-  <div className='py-10 px-40 flex flex-1 flex-col  text-white'>
-  <h1 className='font-sans text-5xl gradientHeadingWhite'>Contact Us</h1>
-  <h1 className="font-coolvetica text-black text-3xl gradientHeadingWhite mb">Let's Connect</h1>
-  <div className="mt-8">
-    <p className="text-lg font-coolvetica">
-      <span className='text-2xl text-gray-500'>Phone</span><br/> +91 9999028806, +91 9873123800
-    </p>
-    <p className="text-lg font-coolvetica mt-[0.3rem]">
-      <span className='text-2xl text-gray-500'>Email</span><br/> info@reliablechemtech.com, sales@reliablechemtech.com
-    </p>
-    <p className="text-lg font-coolvetica mt-[0.3rem]">
-      <span className='text-2xl text-gray-500'>Address</span><br/> 875, Swarn Park, Mundka, New Delhi - 110041, near Metro Pillar No. 497.
-    </p>
-    <p className="text-lg font-coolvetica mt-[0.3rem]">
-      <span className='text-2xl text-gray-500'>Business Hours</span><br/> 9 AM to 7 PM, Monday to Saturday (Sunday: Closed)
-    </p>
-  </div>
-  <div className='flex gap-4 mt-[2rem] text-white'>
-    <LuLinkedin size={30}/>
-    <LuTwitter size={30}/>
-    <LuPhoneCall size={30}/>
-  </div>
-</div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56003.88603804155!2d76.96467876434323!3d28.68238041421378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05c4409e4423%3A0x4bd0e5139d400c25!2sSwarn%20Park!5e0!3m2!1sen!2sin!4v1718832443534!5m2!1sen!2sin" style={{ height: '34rem', flex:'1.5'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-</div>
 
 
 
